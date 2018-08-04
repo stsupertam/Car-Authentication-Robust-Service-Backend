@@ -10,5 +10,6 @@ router.get('/', (req, res) => {
 })
 
 require('./app')(router);
+require('./key')(router);
 
 export default router;
