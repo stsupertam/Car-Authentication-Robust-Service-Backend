@@ -1,7 +1,9 @@
 import crypto from 'crypto'
 import fs from 'fs'
 
-const ownerPub = fs.readFileSync('/home/supertam/Car-Authentication-Robust-Service-Backend/key/public.pub', 'utf-8').toString();
+const pathname = '/Users/UnnamE/Desktop/Car-Authentication-Robust-Service-Backend'
+
+const ownerPub = fs.readFileSync(`${pathname}/key/public.pub`, 'utf-8').toString();
 var owner = {
   isOwner:true,
   period: {
